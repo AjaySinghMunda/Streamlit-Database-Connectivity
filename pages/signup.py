@@ -1,6 +1,6 @@
 import streamlit as st
 import pymongo
-conn=pymongo.MongoClient("mongodb://127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000&appName=mongosh+2.8.2")#Set the connection with mongo database and our code
+conn=pymongo.MongoClient("mongodb+srv://ajay08singhmunda_db_user:PKQROAajnfpfBQOB@cluster0.whgecul.mongodb.net/?appName=Cluster0")#Set the connection with mongo database and our code
 mydb=conn["CAP"]#CAP is the database name
 my=mydb["student"]#student is a collection on mongodb
 st.title("📝 S i g n U p")
