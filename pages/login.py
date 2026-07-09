@@ -3,7 +3,7 @@ import pymongo
 import time
 with st.spinner("Loading....."):
        time.sleep(1)
-conn=pymongo.MongoClient("mongodb+srv://ajay08singhmunda_db_user:PKQROAajnfpfBQOB@cluster0.whgecul.mongodb.net/?appName=Cluster0")
+conn=pymongo.MongoClient("mongodb+srv://ajay08singhmunda_db_user:Ajay08MongoDB@cluster0.whgecul.mongodb.net/?appName=Cluster0")
 mydb=conn["CAP"]
 my=mydb["student"]
 st.title("🐍All the basic python code")
