@@ -1,10 +1,7 @@
 import streamlit as st
 import pymongo
 
-conn = pymongo.MongoClient(
-    "mongodb+srv://ajay08singhmunda_db_user:Ajay08MongoDB@cluster0.whgecul.mongodb.net/?appName=Cluster0",
-    serverSelectionTimeoutMS=5000
-)
+conn = pymongo.MongoClient(st.secrets["MONGO_URI"])
 
 try:
     conn.admin.command("ping")
