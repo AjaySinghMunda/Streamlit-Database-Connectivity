@@ -2,7 +2,7 @@ import streamlit as st
 import pymongo
 
 conn = pymongo.MongoClient(
-    st.secrets["MONGO_URI"],
+    "mongodb+srv://ajay08singhmunda_db_user:YOUR_PASSWORD@cluster0.whgecul.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0",
     serverSelectionTimeoutMS=5000
 )
 
