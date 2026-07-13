@@ -37,7 +37,7 @@ else:
        st.stop()
 
 st.balloons()
-c1,c2,c3=st.columns(3)
+c1,c2,c3,c4=st.columns(4)
 st.title("🐍All the basic python code")
 st.success(f"Welcome :{st.session_state['username']}")
 if c1.button("Logout",use_container_width=True):
@@ -59,3 +59,6 @@ if c2.button("See Profile",use_container_width=True):
               
 if c3.button("Change Password",use_container_width=True):
        cp()
+       
+if c4.button("AI Implimentation", use_container_width=True):
+         st.write("AI Implimentation is in progress")
